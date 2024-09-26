@@ -1,0 +1,732 @@
+
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+}
+ul li{
+    text-decoration: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+a{
+    color: white;
+    text-decoration: none;
+    text-wrap: nowrap;
+
+}
+/* ========== Главное Окно ==========  */
+
+.titleWindow {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: end;
+}
+
+/* ========== LeftButton ==========  */
+
+.titleWindow__leftBtn {
+    position: absolute;
+    left: 0;
+    background-color: #194DD2;
+    flex-basis: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 25%;
+    transition: all 0.5s ease;
+    z-index: 110;
+}
+.newClass{
+    transition: all 0.5s ease;
+    width: 100%;
+
+}
+.leftBtn {
+    font-weight: bold;
+    font-size: 36px;
+    text-wrap: wrap;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    line-height: 200%;
+}
+.titleWindow__leftBtn img{
+    margin-top: 0px;
+}
+
+.leftBtn100{
+    flex-basis: 100%;
+    width: 100%;
+}
+
+
+
+/* ========== Header ==========  */
+
+.titleWindow__main {
+    flex-basis: 75%;
+}
+.header {
+    display: flex;
+    width: 75%;
+    height: auto;
+    background-color: black;
+    z-index: 100;
+    position: absolute;
+}
+.header ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 75%;
+}
+.header li{
+   margin: 0 25px;
+   padding: 20px 0 ;
+   align-self: center;
+}
+header li a:hover{
+    text-decoration: underline;
+}
+.inBtn{
+    flex-basis: 25%; 
+    background-color: #194DD2;
+    text-align: center;
+    align-content: center;
+    text-wrap: nowrap;
+    padding: 10px;
+}
+.inBtn:hover{
+    background-color: #04267e;
+}
+
+/* ========== BurgerMenu ========== */
+
+.burgerMenu{
+    display: none;
+    position: relative;
+    width: 40px;
+    height: 35px;
+    margin-right: 20px;
+}
+.burgerMenu span{
+    position: absolute;
+    width: 40px;
+    height: 4.5px;
+    background-color: #0A51CB;
+    border-radius: 2px;
+}
+.burgerMenu :first-child{
+    top: 2px;
+}
+.burgerMenu :nth-child(2n){
+    bottom: 15px;
+}
+.burgerMenu :nth-child(3n){
+    bottom: 2px;
+}
+
+.BurgerWindow{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background-color: #1a1a1a;
+    z-index: 130;
+    padding: 50px;
+    display: none;
+}
+.BurgerUp{
+    display: block;
+}
+.BurgerWindow li{
+    padding: 20px;
+    font-size: 30px;
+}
+.BurgerWindow ul{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: end;
+}
+
+/* ========== Slider ========== */
+
+.slidierContainer{
+    width: 100%;
+    height: 100%;
+    background-color: #d10000;
+    display: flex;
+    align-items: center;
+}
+.sliderContent{
+    margin-left: 100px;
+    z-index: 10;
+    color: white;
+}
+.title{
+    font-size: 52px;
+    font-weight: bold;
+    color: white;
+}
+.sliderContent p{
+    font-size: 22px;
+    margin-bottom: 100px;
+}
+.btn{
+    font-size: 18px;
+    padding: 20px 40px;
+    border-radius: 40px;
+    border: 2px solid rgb(255, 255, 255);
+}
+.swiper {
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    height: 100vh;
+    width: 75%;
+}
+.swiper-wrapper{ 
+    position: absolute;
+    right: 0;
+    width: 100%;
+}
+.swiper-slide {
+    position: absolute;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+  
+}
+.swiper-slide {
+    max-width: 100%;
+    /* animation: fade 3s linear infinite; */
+  }
+  @keyframes fade {
+    0% { opacity: 0 }
+    50% { opacity: 1 }
+    100% { opacity: 0 }
+  }
+/* ========== Main ========== */
+
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 4px solid black;
+    margin-top: 50px;
+    max-width: 1400px;
+    background-color: white;
+}
+
+/* ========== /Main ========== */
+/* ========== AboutWork ========== */
+
+.mainContainer__aboutWork {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.aboutWork_description {
+    display: flex;
+    width: 100%;
+}
+.aboutWork_description-image {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 50%;
+}
+
+.aboutWork_description-image div{
+    flex-basis: 50%;
+    background-color: #194DD2;
+    position: relative;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+.aboutWork_description-image div h1{
+    position: absolute;
+    font-size: 42px;
+    bottom: 30px;
+    left: 30px;
+}
+/* }.aboutWork_description-image :nth-child(2n){
+    flex-basis: 50%;
+} */
+
+.aboutWork_description-image :nth-child(3n){
+    margin-top: 10px;
+}
+
+
+.aboutWork_description-text {
+    display: flex; 
+    flex-direction: column;
+    justify-content: end;
+    padding: 0 100px;
+}
+.aboutWork_description-text h1 {
+    color: black;
+    font-size: 42px;
+    margin-bottom: 60px;
+}
+.aboutWork_description-text p {
+    font-size: 18px;
+    margin: 0;
+}
+.aboutWork_description-text b{
+    margin: 20px 0;
+}
+
+.aboutWork_description-text span {
+    margin: 80px 0 20px 0;
+}
+.aboutWork_description-text a {
+    background-color: #0A51CB;
+    color: white;
+}
+
+
+
+.aboutWork_description-scops {
+    display: flex;
+    margin: 100px 0 100px 0;
+}
+.blocke_scope {
+    box-shadow: 0px 0px 45px 10px rgba(0, 0, 0, 0.1);
+    margin: 0 15px;
+    padding: 60px 30px;
+}
+.blocke_scope p{
+    color: #4D4D4D;
+}
+.blocke_scope-title {
+    display: flex;
+    align-items: center;
+} 
+.blocke_scope-title div{
+    height: 50px;
+    width: 2px;
+    background-color: #E3E3E3;
+    margin: 0 30px;
+} 
+
+/* ========== /AboutWork ========== */
+/* ========== Manual ========== */
+
+.section__manual {
+    display: flex; /* display: flex;  */
+    background-color: #1A1A1A;
+    width: 100%;
+}
+.section__manual-image {
+}
+
+
+.section__manual-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 60px 0 50px;
+}
+.section__manual-title div{
+    width: 65px;
+    height: 2px;
+    background-color: white;
+    margin: 50px 0 100px 0;
+}
+.section__manual-title a{
+    background-color: #194DD2;
+    border: none;
+}
+
+
+.section__manual-steps {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.step{
+    display: flex;
+    margin: 20px 0;
+    align-items: center;
+}
+.step p{
+    color: white;
+    padding: 0 10px 0 40px;
+    font-size: 18px;
+}
+.step p b{
+}
+.step div{
+    min-width: 85px;
+    height: 85px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 36px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #194DD2;
+}
+.step2 div{
+    background-color: #194DD2;
+    color: #ffffff;
+}
+
+/* ========== /Manual ========== */
+/* ========== Advantages ========== */
+
+.mainContainer_Advantages {
+    display: flex; /* display: flex;  */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.Advantages-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.Advantages-title h1{
+    color: black;
+}
+.Advantages-title h4{
+    color: #133F8D;
+    font-size: 18px;
+}
+.subtitle {
+}
+.line {
+    display: block;
+    width: 65px;
+    height: 3px;
+    background-color: #133F8D;
+    margin: 20px 0;
+}
+.title {
+    margin: 0;
+}
+.Advantages-blocks {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 100px;
+}
+.advantage {
+    display: flex;
+    margin: 20px 0;
+    align-items: center;
+    max-width: 700px;
+}
+.advantage div{
+    margin-left: 30px;
+}
+.buttons{
+    display: flex;
+    margin-top: 100px;
+}
+.buttons a:nth-child(1n){
+    font-weight: 500;
+    background-color: #0A51CB;
+    border: none;
+}
+.buttons a:nth-child(2n){
+    background-color: white;
+    color: black;
+    border: 3px solid black;
+    margin-left: 40px;
+}
+
+/* ========== /Advantages ========== */
+/* ========== Stats ========== */
+
+.section-stats{
+    background-image: url('../image/Stats/background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    display: flex; /* display: flex;  */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    padding: 120px 0;
+}
+.stats-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.stats-title span{
+    background-color: white;
+
+}
+.stats-blocks {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.stats-blocks div {
+    margin: 0 20px;
+}
+.stats-blocks h1{
+    color: white;
+    font-size: 64px;
+    width: 320px;
+    border-bottom: 2px solid white;
+    padding-bottom: 30px;
+}
+.stats-blocks p {
+    font-size: 18px;
+    color: white;
+}
+
+/* ========== /Stats ========== */
+/* ========== Income ========== */
+
+
+.mainContainer_income { /* убрать  */
+    margin: 20px;
+}
+.income-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.income-title h1{
+    color: black;
+}
+.income-title h4{
+color: #04267e;
+}
+.subtitle {
+}
+.line {
+}
+.title {
+}
+.scops {
+    position: relative;
+    display: flex;
+    margin-top: 100px;
+    max-width: 1500px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.income_scope{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 430px;
+    transition: all 0.2s;
+    border-radius: 5px;
+}
+.income_scope:hover{
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    width: 330px;
+    height: 430px;
+    transition: all 0.2s;
+}
+.mainContainer{
+    border: none;
+}
+.income_scope img{
+    width: 64px;
+}
+.income_scope h4{
+    color: #04267e;
+    font-size: 18px;
+    font-weight: 500;
+}
+.blocke_scope-title {
+}
+
+/* ========== /Income ========== */
+/* ========== AI ========== */
+
+.mainContainer_AI{
+    margin-top: 100px;
+}
+@media (max-width: 500px) {
+    .aboutWork_description2 span{
+        
+    }
+}
+
+/* ========== /AI ========== */
+/* ========== MakeMoney ========== */
+
+.mainContainer_makeMoney{
+    margin-top: 150px;
+}
+.aboutWork_description2{
+    display: flex;
+    width: 100%;
+    flex-direction: row-reverse;
+}
+.aboutWork_description2{
+}
+
+/* ========== /MakeMoney ========== */
+/* ========== Questions ========== */
+
+.mainContainer_questions {
+    margin-top: 100px;
+}
+.questions-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.questions-title h1{
+    color: black;
+}
+.title {
+}
+.line {
+}
+
+.questions {
+    display: flex;
+    margin-top: 100px;
+
+}
+
+.containers-questions{
+    margin-right: 20px;
+}
+.question-container {
+    display: flex;
+    align-items: center;
+    margin: 15px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    padding: 20px 30px;
+}
+
+.question-container h2{
+    font-size: 40px;
+    font-weight: 700;
+    color: #0A51CB;
+    margin-right: 40px;
+}
+.question-container p{
+    font-size: 18px;
+    color: black;
+    margin-right: 40px;
+}
+.question-container div{
+    min-width: 10px;
+    height: 10px;
+    border: 3px solid #32557f;
+    border-left: 0;
+    border-top: 0;
+    transform: rotate(45deg);
+    cursor:pointer;
+}
+.question-container div:active{
+}
+.titleQuestions{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-basis: 50%;
+    background-color: #0A51CB;
+    padding: 65px;
+    color: white;
+}
+.titleQuestions h1{
+    font-size: 36px;
+}
+.titleQuestions span{
+    background-color: white;
+    margin: 40px 0;
+}
+.titleQuestions p{
+    font-size: 18px;
+    font-weight: 700;
+}
+
+/* ========== /Questions ========== */
+/* ========== Footer ========== */
+
+.footer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #0C0C0C;
+    padding: 100px 0;
+    margin-top: 100px;
+    flex-wrap: wrap;
+}
+.footer p{
+    color: white;
+    max-width: 310px;
+    font-size: 18px;
+}
+.footer h3{
+    color: white;
+    border-bottom: 2px solid white;
+    margin: 0;
+    padding: 25px 0;
+}
+.footer ul{
+    margin: 25px 0 0 0;
+    height: 320px;
+    padding: 0;
+}
+.footer li{
+    color: white;
+    font-size: 18px;
+    text-wrap: wrap;
+    padding: 15px 0;
+}
+.footer a{
+}
+
+
+.Navigation{
+}
+.Navigation li{
+}
+
+.NavigationLink{
+    display: flex;
+}
+.NavigationLink :first-child{
+    padding-right: 20px;
+}
+
+.contacts {
+}
+.contacts h3{
+    color: white;
+}
+.contacts li{
+    color: white;
+}

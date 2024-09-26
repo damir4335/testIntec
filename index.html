@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Подключение стилей -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/adaptive.css">
+    <!-- Подключение слайдера -->
+    <!-- <linkrel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/> -->
+    <!-- Подключение шрифтов -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- ========= titleWindow ========= -->
+   <section class="titleWindow">
+        <a class="titleWindow__leftBtn" id="lfbtn" href="#" onclick="return sliding();" >
+            <p class="leftBtn">
+                Начать <br> зарабатывать
+            </p>
+            <img src="image/vector 1.svg" alt="">
+        </a>
+
+        <main class="titleWindow__main">
+            <!-- ========= Header ========= -->
+            <header class="header">
+                <ul>
+                    <div class="burgerMenu" onclick="menu()">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <li><a href="#">О компании</a></li>
+                    <li><a href="#">Инвестору</a></li>
+                    <li><a href="#">Новости</a></li>
+                    <li><a href="#">Отзывы</a></li>
+                    <li><a href="#">F.A.Q</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+                <a href="#" class="inBtn">Вход/Регистрация</a>
+            </header>
+            <div class="BurgerWindow" id="BurgerWindow">
+                <ul>
+                    <li><a href="#">О компании</a></li>
+                    <li><a href="#">Инвестору</a></li>
+                    <li><a href="#">Новости</a></li>
+                    <li><a href="#">Отзывы</a></li>
+                    <li><a href="#">F.A.Q</a></li>
+                    <li><a href="#">Контакты</a></li>
+                    <div class="burgerMenu" onclick="menu()"s>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </ul>
+            </div>
+
+            <!-- ========= Slider ========= -->
+
+            <!-- Основной контейнер слайдера -->
+             <div class="slidierContainer">
+                <div class="sliderContent">
+                    <h1 class="title">Сегодня рынок <br>IT-технологий измеряется <br> уже триллионами долларов</h1>
+                    <p>Мы знаем как зарабоать свою долю прибыли. 
+                        <br> Регестрируйтесь на нашей платформе и начинайте<br> зарабатывать с нами
+                    </p>
+                    <a href="#" class="btn" >Калькулятор прибыли</a>
+                </div>
+                
+                <div class="swiper" id="swiperBlock">
+                    <!--  Требуется дополнительная оболочка -->
+                    <div class="swiper-wrapper" id="swiperWrapper">
+                      <!-- Cлайдера -->
+                      <div class="swiper-slide" id="swiper1" style="background-image: url('image/imgSlider/slide1.png');">slide 1</div>
+                      <div class="swiper-slide" id="swiper2" style="background-image: url('image/imgSlider/slide2.webp');">slide 2</div>
+                      <div class="swiper-slide" id="swiper3" style="background-image: url('image/imgSlider/slide3.jpg');">slide 3</div>
+                      ...
+                    </div>
+            
+                    <!--  полоса прокрутки-->
+                    <div class="swiper-pagination"></div>
+                </div>
+             </div>
+        </main>
+   </section> 
+
+<!-- ========= /TitleWindow========= -->
+<!-- ========= MainContainer ========= -->
+ <!-- ========= AboutWork ========= -->
+
+   <main class="mainContainer">
+        <section class="mainContainer__aboutWork">
+            <div class="aboutWork_description">
+                <div class="aboutWork_description-image">
+                    <div><h1 class="title">Как мы работаем</h1></div>
+                    <img src="image/aboutWork/image1.png" alt="">
+                    <img src="image/aboutWork/image2.png" alt="">
+                </div>
+                <div class="aboutWork_description-text">
+                    <h1 class="title">Как мы работаем <br> и на чем зарабатываем</h1>
+                    <p class="text">
+                        Команда, у которой за плечами не менее 12 лет работы на разных 
+                        позициях в сегменте инвестиционного бизнеса – от аудитора и
+                        аналитика отдела рисков до финансового директора 
+                        инвестиционного банка. Формируя динамичный инвестиционный 
+                        портфель, мы ежедневно применяем накопленный опыт в разных 
+                        направлениях, и делаем упор на стартапы в сферах:
+                    </p>
+                    <span>
+                        <a href="#" class="btn">Регистрация</a>
+                    </span>
+                </div>
+            </div>
+            
+            <div class="aboutWork_description-scops">
+
+                <div class="blocke_scope" id="blocke1">
+                    <div class="blocke_scope-title">
+                        <img src="image/aboutWork/vectorIcon.svg" alt="">
+                        <div></div>
+                        <h3>Блокчейн <br> и криптавалюта</h3>
+                    </div>
+                    <p class="text">
+                        Сегодня IT-проекты в этой сфере в
+                        центре внимания инвесторов всего
+                        мира. Но эти технологии интересуют нас
+                        не только сами по себе, мы
+                        рассматриваем перспективы их
+                        внедрение в e-commerce и в развитие
+                        маркетплейсов.
+                    </p>
+                </div>
+
+                <div class="blocke_scope" id="blocke2">
+                    <div class="blocke_scope-title">
+                        <img src="image/aboutWork/vectorIcon.svg" alt="">
+                        <div></div>
+                        <h3>Блокчейн <br> и криптавалюта</h3>
+                    </div>
+                    <p class="text">
+                        Сегодня IT-проекты в этой сфере в
+                        центре внимания инвесторов всего
+                        мира. Но эти технологии интересуют нас
+                        не только сами по себе, мы
+                        рассматриваем перспективы их
+                        внедрение в e-commerce и в развитие
+                        маркетплейсов.
+                    </p>
+                </div>
+
+                <div class="blocke_scope" id="blocke3">
+                    <div class="blocke_scope-title">
+                        <img src="image/aboutWork/vectorIcon.svg" alt="">
+                        <div></div>
+                        <h3>Блокчейн <br> и криптавалюта</h3>
+                    </div>
+                    <p class="text">
+                        Сегодня IT-проекты в этой сфере в
+                        центре внимания инвесторов всего
+                        мира. Но эти технологии интересуют нас
+                        не только сами по себе, мы
+                        рассматриваем перспективы их
+                        внедрение в e-commerce и в развитие
+                        маркетплейсов.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+<!-- ========= /AboutWork ========= -->
+<!-- ========= Manual ========= -->
+
+    <section class="section__manual">
+        <img src="image/Manual/image21.png" alt="" class="section__manual-image">
+        <div class="section__manual-title">
+            <h1 class="title">Инвестировать<br>с нами надежно<br>и выгодно</h1>
+            <div></div>
+            <span>
+                <a href="" class="btn">Начать зарабатывать</a>
+            </span>
+            
+        </div>
+        <div class="section__manual-steps">
+            <div class="step step1">
+                <div>1</div>
+                <p class="text"> 
+                    <b>Регистрация на сайте</b>
+                    <br>
+                    <br>
+                    Пройдите процедуру регистрации на сайте для
+                    открытия счета. Нажмите кнопку «Регистрация»
+                    и заполните все необходимые поля
+                </p>
+            </div>
+
+            <div class="step step2">
+                <div>2</div>
+                <p>
+                    <b>Регистрация на сайте</b>
+                    <br>
+                    <br>
+                    Пройдите процедуру регистрации на сайте для
+                    открытия счета. Нажмите кнопку «Регистрация»
+                    и заполните все необходимые поля
+                </p>
+            </div>
+
+            <div class="step step3">
+                <div>3</div>
+                <p>
+                    <b>Регистрация на сайте</b>
+                    <br>
+                    <br>
+                    Пройдите процедуру регистрации на сайте для
+                    открытия счета. Нажмите кнопку «Регистрация»
+                    и заполните все необходимые поля
+                </p>
+            </div>
+        </div>
+   </section>
+<!-- ========= /Manual ========= -->
+<!-- ========= Advantages ========= -->
+   <main class="mainContainer">
+        <section class="mainContainer_Advantages">
+            <div class="Advantages-title">
+                <h4 class="subtitle">
+                    Почему именно мы?
+                </h4>
+                <div class="line"></div>
+                <h1 class="title">Преимущества работы с нами</h1>
+            </div>           
+            <div class="Advantages-blocks">
+                <div class="advantage">
+                    <img src="image/Advantages/иконка1.svg" alt="">
+                    <div>
+                        <p class="text">
+                            <b>Стабильный доход – 1.2% в день</b>
+                            <span class="line"></span>
+                            Возможность получения стабильной доходности, 
+                            превышающей процентную ставку по банковским депозитам.
+                        </p>
+                    </div>
+                </div>           
+                <div class="advantage">
+                    <img src="image/Advantages/иконка2.svg" alt="">
+                    <div>
+                        <p class="text">
+                            <b>Устойчивость «Open Invest System»</b>
+                            <span class="line"></span>
+                            Эффективность инвестиционных стратегий и 
+                            защита ваших денежных средств подтверждается 
+                            многолетним опытом работы профессиональной команды 
+                            инвесторов
+                        </p>
+                    </div>
+                </div>           
+                <div class="advantage">
+                    <img src="image/Advantages/иконка3.svg" alt="">
+                    <div>
+                        <p class="text">
+                            <b>Быстрый вывод средств</b>
+                            <span class="line"></span>
+                            Мы знаем как важно иметь доступ к своим 
+                            личным средствам, поэтому автоматизировали 
+                            процесс вывода дивидендов до 24-х часов
+                        </p>
+                    </div>
+                </div>           
+                <div class="advantage">
+                    <img src="image/Advantages/иконка4.svg" alt="">
+                    <div>
+                        <p class="text">
+                            <b>Минимальная инвестиция - 100р.</b>
+                            <span class="line"></span>
+                            Вы сами определяете свои инвестиционные цели. 
+                            Начните с небольшой суммы, основные депозитные 
+                            предложения доступны от 100 руб.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="buttons">
+                <a href="#" class="btn">Регистрация</a>
+                <a href="#" class="btn">Калькулятор прибыли</a>
+            </div>
+        </section>
+   </main>
+<!-- ========= /Advantages ========= -->
+<!-- ========= Stats ========= -->
+   <section class="section-stats">
+        <div class="stats-title">
+            <h1 class="title">Статистика компании</h1>
+            <span class="line"></span>
+        </div>           
+        <div class="stats-blocks">
+            <div>
+                <h1>932</h1>
+                <p>Работаем (дней)</p>
+            </div>
+            <div>
+                <h1>960696</h1>
+                <p>Всего инвесторов</p>
+            </div>
+            <div>
+                <h1>67</h1>
+                <p>Новых за 24 часа</p>
+            </div>
+            <div>
+                <h1>109500р.</h1>
+                <p >Среднее пополнение</p>
+            </div>
+        </div>
+        <div class="buttons">
+            <a href="#" class="btn">Присоедениться к нам</a>
+            <a href="#" class="btn">Калькулятор прибыли</a>
+        </div>
+    </section>
+
+<!-- ========= /Stats ========= -->
+<!-- ========= Income ========= -->
+
+<main class="mainContainer">
+    <section class="mainContainer_income">
+        <div class="income-title ">
+            <h4 class="subtitle">
+                На чем мы больше всего зарабатываем?
+            </h4>
+            <div class="line"></div>
+            <h1 class="title">Стартапы и технологии</h1>
+        </div>      
+        <div class="scops"> 
+
+            <div class="income_scope" id="scope1">
+                    <img src="image/aboutWork/vectorIcon.svg" alt="">
+                    <h4 class="subtitle">
+                        Стартапы из сферы:
+                    </h4>
+                    <h3>криптавалюты</h3>
+            </div>
+
+            <div class="income_scope" id="scope2">
+                    <img src="image/aboutWork/vectorIcon.svg" alt="">
+                    <h4 class="subtitle">
+                        Технология из сферы:
+                    </h4>
+                    <h3>ИИ в сфере беттинга</h3>
+            </div>
+
+            <div class="income_scope" id="scope3">
+                    <img src="image/aboutWork/vectorIcon.svg" alt="">
+                    <h4 class="subtitle">
+                        Стартапы из сферы
+                    </h4>
+                    <h3>Блокчейн и ICO</h3>
+            </div>
+
+            <div class="income_scope" id="scope4">
+                    <img src="image/aboutWork/vectorIcon.svg" alt="">
+                    <h4 class="subtitle">
+                        Стартапы из сферы
+                    </h4>
+                    <h3>VR- технологии</h3>
+            </div>
+            
+            <div class="income_scope" id="scope5">
+                <img src="image/aboutWork/vectorIcon.svg" alt="">
+                <h4 class="subtitle">
+                    Стартапы из сферы
+                </h4>
+                <h3>Внедрение сетей 5G</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========= /Income ========= -->
+     <!-- ========= AI ========= -->
+
+    <section class="mainContainer_AI">
+        <div class="aboutWork_description2">
+            <div class="aboutWork_description-image">
+                <div><h1 class="title">Технология из сферы</h1></div>
+                <img src="image/aboutWork/image1.png" alt="">
+                <img src="image/aboutWork/image2.png" alt="">
+            </div>
+            <div class="aboutWork_description-text">
+                <h1 class="title">Исскуственный инетелект<br>в сфере беттинга</h1>
+                <p class="text">
+                    Запатентованный инфопродукт собственного производства на основе 
+                    искусственного интеллекта служит нам подспорьем, гарантируя стабильный, 
+                    практически пассивный доход в сфере беттинга.
+                </p>
+                    <b>Как это работает?</b>
+                <p>
+                    Искусственный интеллект на основе нейросети,
+                    постоянно обучаясь, в реальном времени анализирует
+                    коэффициенты и иные переменные в зарубежных букмекерских конторах,
+                    дополняя анализ статистическими данными игры, и выносит прогноз,
+                    крайне редко ошибаясь. Читать далее
+                </p>
+                <span>
+                    <a href="" class="btn">Начните прямо сейчас</a>
+                </span>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- ========= /AI ========= -->
+    <!-- ========= MakeMoney ========= -->
+
+    <section class="mainContainer_makeMoney"></section>
+        <div class="aboutWork_description2">
+            <div class="aboutWork_description-image">
+                <div><h1 class="title">Как мы работаем</h1></div>
+                <img src="image/aboutWork/image1.png" alt="">
+                <img src="image/aboutWork/image2.png" alt="">
+            </div>
+            <div class="aboutWork_description-text">
+                <h1 class="title">Как мы зарабатываем?</h1>
+                <p class="text">
+                    В основе нашей бизнес-модели лежит принцип 3-х 
+                    уровневой диверсификации – ресурсов, 
+                    инвестиций и рисков
+                </p>
+                <br>
+                <p class="text"></p>
+                    Что это значит? Если мы инвестируем в один из 
+                    нишевых проектов, то обязательно подбираем смежные 
+                    проекты в этой же нише – менее рискованные и более короткие с 
+                    точки зрения получения прибыли.
+                </p>
+                <br>
+                <p class="text"></p>
+                    При таком подходе к инвестированию мы 
+                    параллельно наращиваем прибыль и дивиденды 
+                    с уже существующих вложений в другие проекты, 
+                    чтобы иметь финансовый баланс и гарантировать выплаты 
+                    дивидендов нашим инвесторам в сроки.Читать далее
+                </p>
+                <span>
+                    <a href="" class="btn">Регистрация</a>
+                </span>
+                
+            </div>
+        </div>
+    </section>
+
+     <!-- ========= /MakeMoney ========= -->
+    <!-- ========= Questions ========= -->
+
+    <section class="mainContainer_questions">
+        <div class="questions-title">
+            <h1 class="title">Статистика компании</h1>
+            <span class="line"></span>
+        </div> 
+        <div class="questions">
+            <div class="containers-questions">
+                <div class="question-container">
+                    <h2>?</h2>
+                    <p>Что нужно, чтобы начать работу с future technologies company (ftc)&</p>
+                    <div></div>
+                </div>
+                <div class="question-container">
+                    <h2>?</h2>
+                    <p>Что нужно, чтобы начать работу с future technologies company (ftc)&</p>
+                    <div></div>
+                </div>
+                <div class="question-container">
+                    <h2>?</h2>
+                    <p>Что нужно, чтобы начать работу с future technologies company (ftc)&</p>
+                    <div></div>
+                </div>
+            </div>
+            <div class="titleQuestions">
+                <h1>Какая минимальная сумма депозита?</h1>
+                <span class="line"></span>
+                <p>Минимальный размер депозита – 100 рублей.</p>
+                <p>Максимальный размер депозита – 80 000 000 рублей.</p>
+            </div>
+        </div>
+    </section>
+</main>
+<footer class="footer">
+    <div>
+        <p>
+            Команда, у которой за плечами 
+            не менее 12 лет работы
+            на разных позициях в сегменте инвестиционного бизнеса – 
+            от аудитора и аналитика отдела рисков до финансового директора инвестиционного банка.
+        </p>
+    </div>
+    <div class="Navigation">
+        <h3>Навигация</h3>
+        <div class="NavigationLink">
+            <ul>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">О компании</a></li>
+                <li><a href="#">Отзывы <br> о компании</a></li>
+                <li><a href="#">Как мы <br> зарабатываем?</a></li>
+                <li><a href="#">Клиентское <br> соглашение</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Документы <br> компании</a></li>
+                <li><a href="#">Новости</a></li>
+                <li><a href="#">F.A.Q.</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="contacts">
+        <h3>Контакты</h3>
+        <ul>
+            <li><a href="#">+7 (499)-229-33-33</a></li>
+            <li><a href="#">info@ftc.vin</a></li>
+            <li>ПН - ПТ: 10:00 - 20:00 по МСК</li>
+            <li>СБ - ВС: свободный график</li>
+        </ul>
+    </div>
+</footer>
+   <script src="js/script.js"></script>
+</body>
+</html>

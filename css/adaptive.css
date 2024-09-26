@@ -1,0 +1,216 @@
+
+
+@media (max-width: 1300px) {
+    /* ========== AboutWork ========== */
+
+    .mainContainer__aboutWork {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+    }
+    .aboutWork_description {
+        flex-wrap: wrap;        
+    }
+    .aboutWork_description-image {
+        display: none;
+    }
+
+
+    .aboutWork_description-text {
+        width: 100%;
+        justify-content: center;
+        padding: 0 20px;
+        margin-top: 20px;
+    }
+
+
+    .aboutWork_description-scops {
+        display: flex;
+        margin: 100px 0 100px 0;
+        flex-wrap: wrap;
+    }
+
+    .blocke_scope {
+        margin: 15px 15px;
+        padding: 30px 15px;
+    }
+
+    /* ========== Manual ========== */
+
+    .section__manual-image {
+        display: none;
+    }
+
+    /* ========== Advantages ========== */
+    .Advantages-title h1{
+        color: black;
+        padding: 20px;
+        text-align: center;
+    }
+    .Advantages-blocks {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-top: 50px;
+        justify-content: center;
+    }
+    .advantage {
+        display: flex;
+        margin: 20px 20px;
+        align-items: center;
+        width: 100%;
+    }
+
+}
+
+
+@media (max-width: 1200px) {
+    /* ========== LeftButton ==========  */
+    .leftBtn {
+        font-size: 25px;
+    }
+
+    /* ========== Slider ========== */
+    .title{
+        font-size: 36px;
+    }
+    .sliderContent p{
+        margin-bottom: 50px;
+    }   
+    /* ========== Header ========== */
+    .header li{
+        margin: 0 10px;
+    }
+}
+
+@media (max-width: 900px) {
+    /* ========== LeftButton ==========  */
+    .titleWindow__leftBtn {
+        display: none;
+    }
+
+    /* ========== Slider ========== */
+    .titleWindow__main {
+        flex-basis: 100%;
+    }
+    .sliderContent{
+        margin-top: 100px;
+        margin-left: 30px;
+    }
+    .sliderContent p{
+       display: none;
+    }
+    .sliderContent h1{
+        margin-bottom: 50px;
+
+    }
+    .swiper {
+        width: 100%;
+    }
+    /* ========== Header ========== */
+    .header {
+        width: 100%;
+        
+    }
+    .header ul{
+        justify-content: flex-start;
+    }
+    .header li{
+        display: none;
+    }
+    .burgerMenu{
+        display: block;
+    }
+
+    /* ========== AboutWork ========== */
+
+    .aboutWork_description-text{
+        text-align: center;
+        padding: 0 10px;
+    }
+    .aboutWork_description-text h1{
+        font-size: 38px;
+    }
+
+    /* ========== Manual ========== */
+
+    .section__manual {
+        flex-wrap: wrap;
+        padding: 50px 0px;
+        justify-content: center;
+    }
+    .section__manual-title {
+        padding: 0 20px;
+        align-items: center;
+    }
+    .section__manual-title div{
+        width: 65px;
+        height: 2px;
+        background-color: white;
+        margin: 50px 0 50px 0;
+    }
+    .section__manual-steps {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 20px;
+        margin-top: 50px;
+    }
+
+/* ========== Advantages ========== */
+
+    .advantage div{
+        margin-left: 20px;
+    }
+    .advantage img{
+        width: 65px;
+        height: 65px;
+    }
+    .buttons{
+        display: flex;
+        flex-direction: column;
+        margin-top: 40px;
+        align-items: center;
+        max-width: 290px;
+    }
+    .buttons a:nth-child(2n){
+        margin-left: 0;
+        margin-top: 40px;
+    }
+
+/* ========== Questions ========== */
+ 
+    .questions {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 50px;
+        flex-wrap: wrap;
+    }
+    .questions {
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 50px 10px 0 10px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .containers-questions{
+        margin: 0;
+    }
+    .question-container {
+        padding: 20px;
+    }
+    .question-container h2{
+        font-size: 30px;
+        font-weight: 700;
+        color: #0A51CB;
+        margin-right: 10px;
+    }
+    .question-container p{
+        margin: 20px;
+    }
+    .titleQuestions{
+        padding: 20px;
+
+    }
+}
